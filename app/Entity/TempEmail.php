@@ -4,10 +4,10 @@ namespace App\Entity;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Member extends Model
+class TempEmail extends Model
 {
-    protected $table = 'member';
+    protected $table = 'temp_email';
     protected $primaryKey = 'id';
 
-   
+    public $timestamps = false;
 }
