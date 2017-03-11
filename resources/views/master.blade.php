@@ -10,9 +10,9 @@
 </head>
 <body>
 <div class="bk_title_bar">
-  <img class="bk_back" src="" alt="">
-  <p class="bk_title_content"></p>
-  <img class="bk_menu" src="" alt="">
+  <img class="bk_back" src="/image/back.png" alt="" onclick="history.go(-1)">
+  <p class="bk_title_content">xxx</p>
+  <img class="bk_menu" src="/image/menu.png" alt="" onclick="onMenuClick()">
 </div>
 
 <div class="page">
@@ -84,6 +84,9 @@ function onMenuItemClick(index) {
     setTimeout(function() {$('.bk_toptips').hide();}, 2000);
   }
 }
+
+//将标题与标题栏保持一致
+$('.bk_title_content').html(document.title);
 </script>
 
 @yield('my-js')

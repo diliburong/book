@@ -20,13 +20,11 @@ Route::get('/', function () {
 });
 
 Route::get('/login', 'View\MemberController@toLogin');
-
 Route::get('/register','View\MemberController@toRegister');
 
 
-Route::any('category',function(){
-	return view('/category');
-});
+Route::get('/category','View\BookController@toCategory');
+Route::get('/product/category_id/{category_id}','View\BookController@toProduct');
 
 
 
@@ -38,5 +36,6 @@ Route::group(['prefix'=>'service'],function(){
 	Route::post('register','Service\MemberController@register');
 	Route::post('login','Service\MemberController@login');
 
+	Route::get('category/parent_id/{parent_id}','Service\BookController@getCategoryByParentId');
 
 });
