@@ -25,6 +25,7 @@ Route::get('/register','View\MemberController@toRegister');
 
 Route::get('/category','View\BookController@toCategory');
 Route::get('/product/category_id/{category_id}','View\BookController@toProduct');
+Route::get('/product/{product_id}','View\BookController@toPdtContent');
 
 
 
