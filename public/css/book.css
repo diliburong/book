@@ -72,9 +72,14 @@ body,html{height:100%;-webkit-tap-highlight-color:transparent}
   font-size: 16px;
   color: #888;
 }
+
+.bk_price{
+  font-size: 16px;
+  color: #dc0000;
+}
 .bk_time {
   font-size: 14px;
-  color: #eee;
+  color: #222;
 }
 .bk_important {
   font-size: 16px;
@@ -83,6 +88,13 @@ body,html{height:100%;-webkit-tap-highlight-color:transparent}
 .bk_preview {
  /* width: 120px;*/
   height: 90px;
+}
+
+
+.bk_icon{
+  width:40px;
+  height: 40px;
+  margin-right:10px;
 }
 #global_menu {
   width: 50px;
@@ -117,6 +129,7 @@ body,html{height:100%;-webkit-tap-highlight-color:transparent}
 .bk_content {margin-bottom:50px;}
 .bk_fix_bottom {position: fixed;bottom: 0;width: 100%;background-color: #eee;}
 .bk_half_area{width: 45%;padding:5px 2%;display: inline-block;}
+.bk_btn_area{width: 96%;padding:5px 2%;display: inline-block;}
 
 
 /*标题栏*/
